@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_medium"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDayOfMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/grey_700"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:text="08"/>
+
+            <TextView
+                android:id="@+id/tvMonthName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/grey_700"
+                android:text="Ekim"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/spacing_smallx"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/spacing_xmedium"
+            android:background="@color/grey_60"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/spacing_xmedium"
+                android:layout_marginBottom="@dimen/spacing_xmedium"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/tvMarketName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Item Name"
+                        android:layout_weight="0.1"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/grey_80" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:layout_gravity="end"
+                        android:src="@drawable/ic_right"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvProductName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_xsmall"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:text="Şampuan 25 ml"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/grey_60" />
+
+                    <TextView
+                        android:id="@+id/tvProductPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_xsmall"
+                        android:layout_marginEnd="@dimen/spacing_small"
+                        android:gravity="end"
+                        android:text="25 TL"
+                        android:textStyle="bold"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/grey_60" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/viewProductStateColor"
+                        android:layout_width="@dimen/spacing_large"
+                        android:layout_height="@dimen/spacing_large"
+                        android:layout_gravity="center"
+                        android:background="@color/red_500"/>
+
+                    <TextView
+                        android:id="@+id/tvProductState"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/spacing_middle"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:text="Hazırlanıyor"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewProductDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_5"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_middle"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_xxxlarge"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvDetailProductName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_xsmall"
+                    android:text="Şampuan 25 ml"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/grey_60" />
+
+                <TextView
+                    android:id="@+id/tvDetailProductPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_xsmall"
+                    android:layout_marginEnd="@dimen/spacing_small"
+                    android:gravity="end"
+                    android:text="25 TL"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/grey_60" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:background="@color/grey_40" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

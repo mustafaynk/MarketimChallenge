@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Marketim</string>
+
+    <string name="loginUserName">kariyer</string>
+    <string name="loginPassword">2019ADev</string>
+    <string name="loginControlkey">isLogin</string>
+    <string name="orderProgressTitle">Siparişler Getiriliyor…</string>
+    <string name="orderPageOrders">Siparişlerim</string>
+    <string name="orderPageExitApp">Çıkış Yap</string>
+    <string name="loginPageUserName">Kullanıcı Adı</string>
+    <string name="loginPagePassword">Şifre</string>
+    <string name="loginPageRememberMe">Beni Hatırla</string>
+    <string name="loginPageLogin">Giriş</string>
+    <string name="loginPageUserNameError">Lütfen kullanıcı adını giriniz</string>
+    <string name="loginPagePasswordError">Lütfen şifreyi giriniz</string>
+    <string name="loginPageLoginError">Kullanıcı adı veya şifre yanlış!</string>
+    <string name="exitAppDialogTitle">Uygulamadan çıkış yapmak istiyor musunuz?</string>
+    <string name="exitAppDialogApprove">İstiyorum</string>
+    <string name="exitAppDialogDiscard">İstemiyorum</string>
+    <string name="connectionError">Sunucu erişim hatası</string>
+
+
+</resources>
